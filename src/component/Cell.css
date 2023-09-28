@@ -1,38 +1,66 @@
-.mainBoxSearch{
-    width: 40%;
-    background-color: bisque;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px 0px;
-    margin-top:40px;
+.mainBoxSearch {
+  width: 40%;
+  background-color: bisque;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0px;
+  margin-top: 40px;
 }
-.mainBoxSearch input{
-    padding: 10px 40px;
-    text-align: center;
-    color: black;
-    font-size: 17px;
-    border: none;
+.mainBoxSearch input {
+  padding: 10px 40px;
+  text-align: center;
+  color: black;
+  font-size: 17px;
+  border: none;
 }
 /* control the whole cell -only one individule cell for map*/
-.cell{
-    width: 40%;
-    height: 70px;
-    background-color: lightgray;
-    display: flex;
-    align-items: center;
-    margin: auto;
-padding: 5px 0px;
-border-bottom: 2px solid darkgray;
-   
+.cell {
+  width: 40%;
+  height: 70px;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding: 5px 0px;
+  border-bottom: 2px solid darkgray;
+}
+.targetImage img {
+  width: 50px;
+  height: 50px;
+  padding-left: 30px;
+}
+.targetName {
+  padding-left: 30px;
+
+}
+/* ipad air */
+@media screen and (max-width:992px){
+    .cell {
+        width: 60%;
     
+      }  
+      .mainBoxSearch {
+        width: 60%;
+    
+      }
 }
-.targetImage img{
-    width: 50px;
-    height: 50px;
-    padding-left: 30px;
-}
-.targetName{
-    padding-left: 30px;
+/* phone */
+@media screen and (max-width:600px){
+    .cell {
+        width: 60%;
+    
+      }  
+      .mainBoxSearch {
+        width: 60%;
+    
+      } 
+      .mainBoxSearch input {
+      width: 50%;
+      }
+     .mainBoxSearch h2{
+        font-size: 20px;
+        text-align: center;
+     } 
 }

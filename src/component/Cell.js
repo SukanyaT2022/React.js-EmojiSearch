@@ -16,7 +16,7 @@ setSearchQuery(query)
   return (
     <>
     <div className='mainBoxSearch'>
-        <h2>Emoji Search</h2>
+        <h2> Halloween Emojis Search</h2>
         <input type="text" 
          placeholder='Search'
          value={searchQuery} 
