@@ -32,22 +32,22 @@ setSearchQuery(query)
 filterData.map((val) => {
   return (
     <div className="cell" key={val.id}>
-      <div>
-        <img src={val.image} width={20} height={20} alt={val.name} />
+    <div className='targetImage'>
+        <img src={val.image}  alt={val.name} />
       </div>
-      <div>describe{val.name}</div>
+      <div className='targetName'>{val.name}</div>
     </div>
   );
 })
-: // if nofilterdata this line else go to normal array
+: // if nofilterdata this line else go to normal array fill all cells
 
       nameData.map((val) => {
         return (
           <div className="cell" key={val.id}>
-            <div>
-              <img src={val.image} width={20} height={20} alt={val.name} />
+            <div className='targetImage'>
+              <img src={val.image}  alt={val.name} />
             </div>
-            <div>describe{val.name}</div>
+            <div className='targetName'>{val.name}</div>
           </div>
         );
       })}
