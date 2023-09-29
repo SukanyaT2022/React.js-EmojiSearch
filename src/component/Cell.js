@@ -8,9 +8,19 @@ const Cell = ({ nameData }) => {
   const[filterData, setFilterData] = useState()
 
 
+//second aprt do filter
+//first part get value from user when they type
   const handleSearch=(e)=>{
 const query = e.target.value
 setSearchQuery(query)
+
+//filter {nameData is original array}
+const filter = nameData.filter((item)=>item.name.toLowerCase().includes(searchQuery.toLowerCase()))
+//when user type text it will store in searchQuery state - what ever filter we put on filter variable
+setFilterData(filter)
+//what ever filter we want to store in state line above
+
+
   }
   console.log(searchQuery)
   return (
@@ -22,7 +32,7 @@ setSearchQuery(query)
          value={searchQuery} 
         //  above searchquery from from line7 
          onChange={handleSearch}
-         //handleSearch is functiom handle change
+         //handleSearch is functiom handle change onChane is eventhandler that has 
          />
         
     </div>
